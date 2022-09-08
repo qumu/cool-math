@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "vue-eslint-parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  }
+}
