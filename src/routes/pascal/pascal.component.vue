@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 
-const value = ref('Lorem ipsum');
+const text = ref('Lorem ipsum');
 
-const computedProp = computed(() => value.value.toUpperCase());
+const computedProp = computed(() => text.value.toUpperCase());
 
 const computedArray = computed(() => {
-  return value.value.split('');
+  return text.value.split('');
 });
 </script>
 
@@ -14,9 +14,9 @@ const computedArray = computed(() => {
   <div class="container-fluid">
     <div class="number-prompt">
       <label for="someField" class="form-label">Some label</label>
-      <input v-model="value" class="form-control" id="someField" placeholder="...">
+      <input v-model="text" class="form-control" id="someField" placeholder="...">
     </div>
-    <h4>Value is: {{ value }}</h4>
+    <h4>Value is: {{ text }}</h4>
     <h4>Computed prop is: {{ computedProp }}</h4>
     <div>
       Computed Array is:
